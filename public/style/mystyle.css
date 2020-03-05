@@ -1,0 +1,374 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;        
+    /* background: linear-gradient(110deg, #f6a43f 900px, #e1ebe5 176px); */
+    background: linear-gradient(110deg, #dba25c 900px, #e1ebe5 176px);
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+}    
+
+.title_block  {
+    font-size: 1.5em;
+    font-family: sans-serif;
+    /* font-weight: 700; */
+    color: #ffffff;
+    background: #476b5b;
+    -webkit-box-shadow: 1px 2px 12px 2px black;
+    -moz-box-shadow: 1px 2px 12px 2px black;
+    box-shadow: 1px 2px 12px 2px black;
+    display: flex;
+    justify-content: center;
+    padding: 0.2em 20px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.search_block{
+    padding: 0 6%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    display: none;
+    /* flex-wrap: wrap; */
+}
+
+.searchField {
+    font-size: 16px;
+    width: 55%;
+    min-width: 60%;
+    padding: 10px 15px;
+    border: 3px solid;
+    height: 50px;
+    margin: 10px 0px;
+}
+
+input:focus {
+    outline:none !important;
+}
+
+.list_toggle_icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 40px;
+    color: #474242;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 40px;
+    color: #474242;
+    margin: 0px 20px 0px 0px;
+    cursor: pointer;
+}
+
+.list_toggle_icon:hover {
+    color: #302f2f;
+}
+
+
+
+.auto_scroll_block {
+    background: #4b4646;
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.auto_scroll_block:active {
+    background: #333131;
+}
+
+.auto_scroll_text {
+    margin: 5px 10px 2px 10px;
+    font-size: 20px;
+    color: white;
+}
+
+
+.auto_scroll_switch {
+    margin: 2px 5px;
+    height: 7px;
+    background: #d15a5a;
+    box-shadow: 20px 4px 16px 4px rgba(0, 0, 0, 0.22), 2px 10px 16px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.auto_scroll_switch_active {
+}
+
+.header_image {
+    width: 50px;
+    margin-right: 10px;
+    height: 50px;
+}
+
+.container {
+    padding: 0px 20px 50px 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+footer {
+    height: 40px;
+    background: #2e2d2d;
+    width: 100%;
+    position: absolute;
+    color: white;
+    display: flex;
+    bottom: 0px;
+    justify-content: center;
+}
+
+.footer_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.course_grid {
+    position: relative;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+input:focus {
+    outline:none !important;
+}
+
+.filter_div {
+    background-color: #466c5b;
+    position: relative;
+    background: linear-gradient(68deg, #466c5b 65%, #4b4646 55%);
+    color: #ffffff;
+    width: 16em;
+    /* border-radius: 6px; */
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    height: 9em;
+    padding: 15px;
+    justify-content: space-between;
+    box-shadow: 20px 4px 16px 4px rgba(0, 0, 0, 0.22), 2px 10px 16px 0 rgba(0, 0, 0, 0.19);
+    transition: transform .1s;
+    overflow: hidden;
+}
+
+.filter_div_list {
+    height: 3.3em
+}
+
+.filter_div:hover {
+    transform: scale(1.05);
+}
+
+.course_info {
+    font-size: 22px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.currSeats_compact {
+    font-size: 22px;
+    display: none;
+}
+
+.regCount_Info {
+    font-size: 22px;
+}
+
+.seats {
+    position: relative;
+    display: flex;
+    font-size: 5em;
+    width: 100%;
+    height: 80%;
+    padding: 5% 5% 5% 0
+}
+
+.curr_seats {
+    margin: 0;
+}
+
+.total_seats {
+    margin: 0px;
+    font-size: 0.4em;
+    
+}
+
+.main_info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.more_info {
+    position: absolute;
+    font-size: 17px;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: left;
+    height: 100%;
+    display: none;
+}
+
+.more_info_btn {
+    position: absolute;
+    bottom: 6px;
+    right: 10px;    
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.more_info_btn:hover {
+    color: #ddb525;
+}
+
+.removeFFBtn {
+    position: absolute;
+    font-size: 22px;
+    top: 5px;
+    right: 10px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.cname {
+    width: 92%;
+    word-wrap: break-word;
+    max-height: 50%;
+    overflow: hidden;
+}
+
+.iname {
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.schedule {
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.loc {
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.course_info_block {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-course-back {
+    display: none;
+    margin: 0 0.1em;
+    margin-top: 0.9em;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.fa-times:hover {
+    color: #df4848;
+}
+
+.login_block_wrapper {
+    padding-top: 25px;
+    display: none;
+}
+
+.login_block {
+    width: 22em;
+    padding: 0% 3% 3% 3%;
+    margin: 1em 0 0 0;
+    background: #3b3f3a;
+    box-shadow: -1px 6px 19px 3px #000000;
+}
+
+.login_image {
+    height: 25%;
+    width: 63%;
+}
+
+.logout_btn {
+    font-size: 36px;
+    color: #242424;
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    top: 13px;
+    margin: 0px;
+    right: 20px;
+    display: none;
+}
+
+.logout_btn:hover {
+    color: #ae5959;
+}
+
+.scrollbar {
+    height: 99%;
+    width: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    margin-bottom: 25px;
+    padding: 0px 15px 0px 0px;
+}
+
+.course_grid_wrapper {
+    position: relative;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
+
+@media only screen and (max-width: 600px) {
+    .login_block {
+        width: 19em;
+    }
+}
