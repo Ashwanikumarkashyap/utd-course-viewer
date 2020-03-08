@@ -76,6 +76,7 @@ firebase.auth().onAuthStateChanged(function(user_) {
         $("body").css("height", "auto");
         document.getElementById("logout_btn").style.display = "none";
         document.getElementById("search_block").style.display = "none";
+        document.getElementById("about_block").style.display = "none";
         document.getElementById("title").innerHTML = "Welcome to UT Dallas Course Viewer";
         
         var courseGrid = document.getElementById("course_grid_wrapper");
