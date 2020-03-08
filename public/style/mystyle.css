@@ -11,6 +11,17 @@ body {
     position: relative;
 }    
 
+.black_overlay {
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: #00000091;
+    display: none;
+}
+
 .about_block {
     background: #2c2c2bf5;
     width: 50%;

@@ -28,12 +28,13 @@
         </div>
         <div id="search_input_block" class="search_input_block">
             <input type="text" id="searchField" class="searchField" onkeyup="searchCourse()"
-            placeholder="Search for the courses" title="Type the course code">
+            placeholder="Search for the courses" title="Search for the courses">
             <i id="about" onClick="toggelAboutBlock()" class="about fa fa-question-circle"></i>
         </div>
         <i id="list_toggle_icon" class="list_toggle_icon fa fa-list" onClick="toggelListView()"></i>
     </div>
 
+    <div id="black_overlay" onClick="toggelAboutBlock()" class="black_overlay" ></div>
     <div id="about_block" class="about_block">
         <i id="logout_btn" class="fa removeFFBtn fa-times" onClick="toggelAboutBlock()"></i>
         <div id="about_block_content" class="about_block_content">
