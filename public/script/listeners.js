@@ -37,6 +37,8 @@ firebase.auth().onAuthStateChanged(function(user_) {
         // retrive the data
         programRef.once("value", snap => {
             document.getElementById("logout_btn").style.display = "block";
+            
+            document.getElementById("title_block").style.justifyContent = "left";
             document.getElementById("title").innerHTML = "Courses Offered";
             document.getElementById("search_block").style.display = "flex";
             document.getElementById("course_grid_wrapper").style.display = "block";
@@ -74,10 +76,13 @@ firebase.auth().onAuthStateChanged(function(user_) {
         }
 
         $("body").css("height", "auto");
+        
         document.getElementById("logout_btn").style.display = "none";
         document.getElementById("search_block").style.display = "none";
         document.getElementById("black_overlay").style.display = "none";
         document.getElementById("about_block").style.display = "none";
+
+        document.getElementById("title_block").style.justifyContent = "center";
         document.getElementById("title").innerHTML = "Welcome to UT Dallas Course Viewer";
         
         var courseGrid = document.getElementById("course_grid_wrapper");
